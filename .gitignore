@@ -1,0 +1,15 @@
+# PlatformIO build
+**/.pio/
+
+# README generados automáticamente por PlatformIO
+**/include/README
+**/lib/README
+**/test/README
+
+# VS Code
+**/.vscode/
+
+# Temporales
+*.log
+.DS_Store
+Thumbs.db
