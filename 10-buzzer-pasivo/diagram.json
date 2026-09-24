@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "emanuel ojeda",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -31.8, "left": 31.6, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -38.4, "left": -100.76, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 2.4,
+      "left": 395.4,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:GND.1", "bb1:bn.1", "black", [ "h-19.05", "v67.2" ] ],
+    [ "bz1:1", "bb1:bn.25", "black", [ "v0" ] ],
+    [ "bz1:2", "esp:27", "green", [ "v9.6", "h38", "v-163.2", "h-585.6", "v153.6" ] ]
+  ],
+  "dependencies": {}
+}
